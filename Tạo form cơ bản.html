@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Form cơ bản</title>
+</head>
+<body>
+    <form method="POST" id="form1" action="http://localhost/form.php"
+          <h1>Oder Form</h1>
+            <p> What would you like to buy?</p>
+            <select>
+                <option value="  ">A</option>
+                <option>B (+ 1$)</option>
+                <option>C (+ 1$)</option>
+            </select>
+    <p>How many would you like to oder?</p>
+    <input type="radio" name="rd"/>1 - 10$ <br>
+    <input type="radio" name="rd"/>2 - 20$ <br>
+    <input type="radio" name="rd"/>3 - 30$ <br>
+    <p>Name <span style="color: Red">*</span> </p>
+    <input type="text" name="FirstName" placeholder="First Name" size="20" />
+    <input type="text" name="LastName" placeholder="Last Name" size="20" />
+    <p>Email</p>
+    <input type="text" name="Email" size="35" />
+    <p>Phone Number</p>
+    <input type="number" name="PhoneNumber" size="10" />
+    <p><input type="reset" value="Submit"  onclick="showNotification()" /></p>
+    <input type="reset" value="Reset" />
+    </form>
+    <div id="notification">
+    </div>
+    <script>
+        function showNotification() {
+            let notification = document.getElementById("notification");
+            notification.innerHTML = "Gửi thông tin thành công\n Bạn đã gửi thông tin thành công";
+        }
+    </script>
+</body>
+</html>
